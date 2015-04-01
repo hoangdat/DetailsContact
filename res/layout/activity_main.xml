@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/oto" />
+
+    <LinearLayout
+        android:id="@+id/lnrToolBar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/imgContact"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageButton
+            android:id="@+id/btnImgBack"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow12132" />
+
+        <ImageButton
+            android:id="@+id/btnImgEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="185dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/edit632" />
+
+        <ImageButton
+            android:id="@+id/btnImgSetting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/settings1832" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/BackgroundOverlay"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignBaseline="@+id/imgContact"
+        android:layout_marginTop="225dp"
+        android:alpha="0.7" >
+
+        <TextView
+            android:id="@+id/txtContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Hoang Dat"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtContactName"
+            android:layout_centerHorizontal="true"
+            android:text="Samsung"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrFeature"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imgContact"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnImgCall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/phone332" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:background="#E6E6E6" />
+
+        <ImageButton
+            android:id="@+id/btnImgMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/message232" />
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/lnrFeature"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:background="#E6E6E6" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnrFeature"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
